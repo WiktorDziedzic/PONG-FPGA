@@ -1,6 +1,6 @@
 # UEC2_PONG_PROJECT
 
-# About the project PONG
+## About the project PONG
 
 Welcome to our GitHub repository for our classic Pong game project! In this project, we've taken the traditional Pong game and added several exciting new features to enhance the gameplay experience. Our implementation is written in SystemVerilog and utilizes the Basys 3 FPGA development board.
 
