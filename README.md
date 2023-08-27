@@ -1,5 +1,41 @@
 # UEC2_PONG_PROJECT
 
+## About the project #PONG
+
+Welcome to our GitHub repository for our classic Pong game project! In this project, we've taken the traditional Pong game and added several exciting new features to enhance the gameplay experience. Our implementation is written in SystemVerilog and utilizes the Basys 3 FPGA development board.
+
+Project Highlights
+Our project is centered around the classic Pong game but with a twist. We've designed three distinct gameplay modes, each offering a unique and engaging experience. Gameplay modes are set by 1-3 switches on board.
+
+1. Single-Player Mode with challenging AI.
+The first gameplay mode features a single-player experience with a challenging AI opponent. We've crafted the AI to provide a tough challenge, yet it's beatable with skillful play. This mode is perfect for improving your Pong skills.
+
+2. Multiplayer Mode for intense battles.
+In addition to the single-player mode, we've also implemented a thrilling multiplayer mode. Grab a friend who also has a Basys 3 FPGA board, and you can enjoy head-to-head Pong matches. Compete against each other to see who's the ultimate Pong champion!
+
+3. Innovative racket control using distance sensor.
+One of the standout features of our game is the ability to control your racket using the HCSR04 distance sensor. As you move closer or farther from the sensor, your racket will respond accordingly. This unique control mechanism adds an extra layer of excitement and challenge to the game.
+
+## Technical Details
+We've ensured that our game not only delivers engaging gameplay but also incorporates interesting technical aspects:
+
+UART Communication: Control of the rackets and transmission of match scores are facilitated through UART communication protocols.
+
+Physics and Gameplay: The game physics are thoughtfully designed. Ball-to-wall collisions adhere to real-world physics principles, while ball-to-racket collisions are influenced by controlled randomness. By hitting the ball at the edge of the racket, players can increase the ball's speed and make its trajectory less predictable.
+
+Winning the Match
+The objective of the game is to reach a score of 9 points. Points are scored when the ball goes beyond the opponent's racket and hits the edge of the screen. Be strategic in your gameplay to outsmart your opponent and secure victory!
+
+Visuals and Hardware Setup
+The game's visuals are displayed on a monitor using a VGA connection, with a refresh rate of 60Hz and a resolution of 1024 x 768. To set up the hardware correctly, refer to the constraints and find .xdc file to connect to the appropriate port configurations for the Basys 3 board, as detailed in the Basys 3 Reference Manual. https://digilent.com/reference/_media/basys3:basys3_rm.pdf
+
+## Video Demonstration (In Polish)
+For a comprehensive demonstration of our project's functionality, we've prepared a video in the Polish language. In this video, you'll see the game in action and gain insights into its features and controls. You can watch the video by following the link here
+
+.
+
+# How to use the available scripts
+
 ## Cloning the Repository
 
 ```bash
@@ -121,37 +157,3 @@ This folder contains files strictly related to the FPGA. The file  `fpga/rtl/top
 ### Folder **rtl**
 
 This is where the synthesizable project files are located, not directly related to the FPGA. Among them is the top-level module, which has a purely structural design (meaning it contains instances of submodules and connects them with wire connections).
-
-### About the project **PONG**
-
-Welcome to our GitHub repository for our classic Pong game project! In this project, we've taken the traditional Pong game and added several exciting new features to enhance the gameplay experience. Our implementation is written in SystemVerilog and utilizes the Basys 3 FPGA development board.
-
-Project Highlights
-Our project is centered around the classic Pong game but with a twist. We've designed three distinct gameplay modes, each offering a unique and engaging experience. Gameplay modes are set by 1-3 switches on board.
-
-1. Single-Player Mode with Challenging AI
-The first gameplay mode features a single-player experience with a challenging AI opponent. We've crafted the AI to provide a tough challenge, yet it's beatable with skillful play. This mode is perfect for improving your Pong skills.
-
-2. Multiplayer Mode for Intense Battles
-In addition to the single-player mode, we've also implemented a thrilling multiplayer mode. Grab a friend who also has a Basys 3 FPGA board, and you can enjoy head-to-head Pong matches. Compete against each other to see who's the ultimate Pong champion!
-
-3. Innovative Racket Control using Distance Sensor
-One of the standout features of our game is the ability to control your racket using the HCSR04 distance sensor. As you move closer or farther from the sensor, your racket will respond accordingly. This unique control mechanism adds an extra layer of excitement and challenge to the game.
-
-## Technical Details
-We've ensured that our game not only delivers engaging gameplay but also incorporates interesting technical aspects:
-
-UART Communication: Control of the rackets and transmission of match scores are facilitated through UART communication protocols.
-
-Physics and Gameplay: The game physics are thoughtfully designed. Ball-to-wall collisions adhere to real-world physics principles, while ball-to-racket collisions are influenced by controlled randomness. By hitting the ball at the edge of the racket, players can increase the ball's speed and make its trajectory less predictable.
-
-Winning the Match
-The objective of the game is to reach a score of 9 points. Points are scored when the ball goes beyond the opponent's racket and hits the edge of the screen. Be strategic in your gameplay to outsmart your opponent and secure victory!
-
-Visuals and Hardware Setup
-The game's visuals are displayed on a monitor using a VGA connection, with a refresh rate of 60Hz and a resolution of 1024 x 768. To set up the hardware correctly, refer to the constraints and find .xdc file to connect to the appropriate port configurations for the Basys 3 board, as detailed in the Basys 3 Reference Manual. https://digilent.com/reference/_media/basys3:basys3_rm.pdf
-
-## Video Demonstration (In Polish)
-For a comprehensive demonstration of our project's functionality, we've prepared a video in the Polish language. In this video, you'll see the game in action and gain insights into its features and controls. You can watch the video by following the link here
-
-.
