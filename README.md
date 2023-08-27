@@ -1,6 +1,6 @@
 # UEC2_PONG_PROJECT
 
-## About the project #PONG
+# About the project PONG
 
 Welcome to our GitHub repository for our classic Pong game project! In this project, we've taken the traditional Pong game and added several exciting new features to enhance the gameplay experience. Our implementation is written in SystemVerilog and utilizes the Basys 3 FPGA development board.
 
@@ -8,13 +8,13 @@ Project Highlights
 Our project is centered around the classic Pong game but with a twist. We've designed three distinct gameplay modes, each offering a unique and engaging experience. Gameplay modes are set by 1-3 switches on board.
 
 1. Single-Player Mode with challenging AI.
-The first gameplay mode features a single-player experience with a challenging AI opponent. We've crafted the AI to provide a tough challenge, yet it's beatable with skillful play. This mode is perfect for improving your Pong skills.
+* The first gameplay mode features a single-player experience with a challenging AI opponent. We've crafted the AI to provide a tough challenge, yet it's beatable with skillful play. This mode is perfect for improving your Pong skills.
 
 2. Multiplayer Mode for intense battles.
-In addition to the single-player mode, we've also implemented a thrilling multiplayer mode. Grab a friend who also has a Basys 3 FPGA board, and you can enjoy head-to-head Pong matches. Compete against each other to see who's the ultimate Pong champion!
+* In addition to the single-player mode, we've also implemented a thrilling multiplayer mode. Grab a friend who also has a Basys 3 FPGA board, and you can enjoy head-to-head Pong matches. Compete against each other to see who's the ultimate Pong champion!
 
 3. Innovative racket control using distance sensor.
-One of the standout features of our game is the ability to control your racket using the HCSR04 distance sensor. As you move closer or farther from the sensor, your racket will respond accordingly. This unique control mechanism adds an extra layer of excitement and challenge to the game.
+* One of the standout features of our game is the ability to control your racket using the HCSR04 distance sensor. As you move closer or farther from the sensor, your racket will respond accordingly. This unique control mechanism adds an extra layer of excitement and challenge to the game.
 
 ## Technical Details
 We've ensured that our game not only delivers engaging gameplay but also incorporates interesting technical aspects:
